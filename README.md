@@ -33,7 +33,7 @@ plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length, type = "scatter")
 
 The approach seems pretty straightforward -- in fact, if you exclude `type = "scatter"`, Plotly will make an educated guess about what type of plot you want (and in this case, it will in fact create a scatterplot!). The only syntax that looks a bit strange is the tilde character (`~`). In R, the tilde designates a variable as a **formula**, which was a design choice of the developers of the API.
 
-To practice making basic charts in Plotly, see [exercise-1](exercise-1).
+To practice making basic charts in Plotly, see [exercise-1](http://github.com/info201-s17/m15-plotly/tree/master/exercise-1).
 
 ## Layout
 While the `plot_ly` function controls the data that is being visualized, additional chart options such as _titles and axes_ are controlled by the `layout` function. The `layout` function accepts as a parameter **a plotly object**, and _manipulates that object_. Again, I think a great place to start is an example in the [documentation](https://plot.ly/r/text-and-annotations/):
@@ -65,4 +65,4 @@ This example uses the pipe operator (`%>%`) to pass the plotly object _into_ the
 
 >`yaxis`: Similarly to `xaxis`, Accepts a **named list** to describe the rendering of the yaxis. See a full list of options [here](https://plot.ly/r/reference/#layout-yaxis).
 
-These are of course not the _only_ options you can specify, though are a good start. To practice using the `layout` function in Plotly, see [exercise-2](exercise-2).
+These are of course not the _only_ options you can specify, though are a good start. To practice using the `layout` function in Plotly, see [exercise-2](http://github.com/info201-s17/m15-plotly/tree/master/exercise-2).
