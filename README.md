@@ -1,20 +1,9 @@
-# Module 12: Plotly
+# Plotly
 
-## Overview
 In this module, you'll start building visualizations using the Plotly API. Plotly is a visualization software that recently open-sourced it's API to JavaScript, MatLab, Python, and R, making it quite valuable to learn. Plotly graphs are fairly customizable, and (by default) have a variety of interactive methods with each chart (i.e., hover, brush to zoom, pan, etc.). Many of these events are fairly cumbersome to build programmatically, which makes a library like Plotly quite attractive.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
+Helpful links:
 
-- [Resources](#resources)
-- [Getting Started](#getting-started)
-- [Basic Charts](#basic-charts)
-- [Layout](#layout)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Resources
 - [Plotly Website](https://plot.ly/)
 - [Plotly R API](https://plot.ly/r/)
 - [Getting Started with Plotly for R](https://plot.ly/r/getting-started/)
@@ -44,7 +33,7 @@ plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length, type = "scatter")
 
 The approach seems pretty straightforward -- in fact, if you exclude `type = "scatter"`, Plotly will make an educated guess about what type of plot you want (and in this case, it will in fact create a scatterplot!). The only syntax that looks a bit strange is the tilde character (`~`). In R, the tilde designates a variable as a **formula**, which was a design choice of the developers of the API.
 
-To practice making basic charts in Plotly, see [exercise-1](exercise-1).
+To practice making basic charts in Plotly, see [exercise-1](http://github.com/info201-s17/m15-plotly/tree/master/exercise-1).
 
 ## Layout
 While the `plot_ly` function controls the data that is being visualized, additional chart options such as _titles and axes_ are controlled by the `layout` function. The `layout` function accepts as a parameter **a plotly object**, and _manipulates that object_. Again, I think a great place to start is an example in the [documentation](https://plot.ly/r/text-and-annotations/):
@@ -76,4 +65,4 @@ This example uses the pipe operator (`%>%`) to pass the plotly object _into_ the
 
 >`yaxis`: Similarly to `xaxis`, Accepts a **named list** to describe the rendering of the yaxis. See a full list of options [here](https://plot.ly/r/reference/#layout-yaxis).
 
-These are of course not the _only_ options you can specify, though are a good start. To practice using the `layout` function in Plotly, see [exercise-2](exercise-2).
+These are of course not the _only_ options you can specify, though are a good start. To practice using the `layout` function in Plotly, see [exercise-2](http://github.com/info201-s17/m15-plotly/tree/master/exercise-2).
